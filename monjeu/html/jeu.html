@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="../css/jeu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="landing">
+        <div class="title" style="visibility:visible;">Welcome in the far far west</div>       
+        <button onclick="startGame();"  class="buttonstart">Start</button>
+    </div>
+
+    <div class="game">
+
+        <div class="player1">
+            <div class=name1>I'am Billy</div>
+            <div class="billyAndStuff">
+            <img src="../image/Billy.jpg" alt=Billy class="player1">
+
+                <div class="animations1">
+                    <img src="../image/ammunition.png" alt=load class="loadImage image1 hidden" >
+                    <img src="../image/gunplay.png" alt=shot class="shotImage image1 hidden">
+                    <img src="../image/shield.png" alt=shield class="shieldImage image1 hidden">
+                </div>
+            </div>
+            
+            <div class="unit1">
+                <div>
+                    <img src="../image/coeur.jpeg" alt="coeur" class="vie1">
+                    <img src="../image/coeur.jpeg" alt="coeur" class="vie1">
+                    <img src="../image/coeur.jpeg" alt="coeur" class="vie1">
+                </div>
+        
+                <div>
+                    <img src="../image/bullet.png" alt="bullet" class="p1 bullet manquant">
+                    <img src="../image/bullet.png" alt="bullet" class="p1 bullet manquant">
+                    <img src="../image/bullet.png" alt="bullet" class="p1 bullet manquant">
+                </div>
+            </div>
+
+            <div class="myButtons1">
+                <button class="load">Load A</button>
+                <button class="shot">Shot S</button>
+                <button class="shield">Shield D</button>
+            </div>
+        </div>
+
+        <div class="player2">
+            <div class=name2>I'am Joe</div>
+            <div class="joeAndStuff">
+            <!-- <img src="../image/Joe.jpeg" alt=Joe class="player2"> -->
+            
+            <div class="animations2">
+                <img src="../image/ammunition.png" alt=load class="loadImage image2 hidden">
+                <img src="../image/output.png" alt=shot class="shotImage image2 hidden">
+                <img src="../image/shield.png" alt=shield class="shieldImage image2 hidden">
+            </div>
+            
+            <img src="../image/Joe.jpeg" alt=Joe class="player2">
+            </div>
+
+            <div class="unit2">
+                <div>
+                    <img src="../image/coeur.jpeg" alt="coeur" class="vie2">
+                    <img src="../image/coeur.jpeg" alt="coeur" class="vie2">
+                    <img src="../image/coeur.jpeg" alt="coeur" class="vie2 manquant">
+                </div>
+        
+                <div>
+                    <img src="../image/bullet.png" alt="bullet" class="p2 bullet manquant">
+                    <img src="../image/bullet.png" alt="bullet" class="p2 bullet manquant">
+                    <img src="../image/bullet.png" alt="bullet" class="p2 bullet manquant">
+                </div>
+            </div>
+
+            <div class="myButtons2">
+                <button class="load">Load J</button>
+                <button class="shot">Shot K</button>
+                <button class="shield">Shield L</button>
+            </div> 
+        </div>
+
+    <script type="text/javascript" src="../animation.js"></script>
+    <script type="text/javascript" src="../game.js"></script>
+    <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>

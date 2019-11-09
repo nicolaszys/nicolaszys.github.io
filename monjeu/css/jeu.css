@@ -1,0 +1,144 @@
+* {box-sizing:border-box;}
+
+body {
+    background-image:url(../image/westowrld.jpg);
+    background-size:100%;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing {
+    position: relative;
+   }
+
+.title {
+    font-size: 500%;
+    text-align: center;
+    color: red;
+    padding-top: 50px;
+}
+.buttonstart {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 200%;
+    background-color: green;
+}
+
+
+.game {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    padding: 0 100px;
+}
+
+.player1 {
+    height:16em;
+}
+
+.name1 {
+    color:white;
+}
+
+.name2 {
+    color:white;
+    padding-left: 200px;
+}
+
+.player2 {
+    height:16em;
+}
+
+.vie1 {
+    height:2em;
+}
+
+.vie2 {
+    height:2em;
+}
+
+.bullet {
+    height:1.5em;
+}
+
+.unit2{
+    padding-left:250px;
+}
+
+/* .vie:not(:first-child){
+    margin-right:20px
+} */
+
+.manquant {
+    opacity: 0.5;
+}
+
+.load {
+    background-color: orange;
+    font-size: 130%;
+}
+
+.shot {
+    background-color:red;
+    font-size: 130%;
+}
+
+.shield {
+    background-color:grey;
+    font-size: 130%;
+}
+
+.loadImage {
+    position: relative;
+    height : 4em;
+}
+
+.shotImage {
+    position: relative;
+    height : 4em;
+}
+
+.shieldImage {
+    position:relative;
+    height : 17em;
+}
+
+.myButtons2 {
+    padding-left: 200px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.billyAndStuff {
+    display:flex;
+} 
+
+.joeAndStuff {
+    display:flex;
+}
+
+.image1 {
+    position: absolute;
+    /* display: none; */
+}
+
+.image2 {
+    position: absolute;
+    /* display: none; */
+}
+
+.animations2 {
+    width: 200px;
+}
+
+
+
+/* 
+div avec position relative, et les mettre en position en aboslute */
+
