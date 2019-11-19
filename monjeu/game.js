@@ -187,7 +187,7 @@ class Game {
             else if (this.player1.bullet === 3 && this.player2.bullet < 3){
                 this.player2.bullet += 1;
             }
-            else if (this.player2.bullet < 3 && this.player2.bullet === 3){
+            else if (this.player1.bullet < 3 && this.player2.bullet === 3){
                 this.player1.bullet += 1;
             }
         }
@@ -215,7 +215,12 @@ class Game {
         //EVALUATE LE NOMBRE DE BALLES ET VIES RESTANT CHACUN
             //PLAYER1
 
-                //VIE
+            //VIE
+
+        $player1vie1.classList.add('transparency');
+        $player1vie2.classList.add('transparency');
+        $player1vie3.classList.add('transparency');
+        
         if(this.player1.health ===3)  {
             $player1vie1.classList.remove('transparency');
             $player1vie2.classList.remove('transparency');
@@ -229,9 +234,14 @@ class Game {
             $player1vie1.classList.remove('transparency');
         }
         else if (this.player1.health ===0) {
-
+            
         }
-                //BULLET
+        //BULLET
+        
+        $player1bullet1.classList.add('transparency');
+        $player1bullet2.classList.add('transparency');
+        $player1bullet3.classList.add('transparency');
+        
         if(this.player1.bullet ===1) {
             $player1bullet1.classList.remove('transparency');
         }
@@ -240,16 +250,21 @@ class Game {
             $player1bullet1.classList.remove('transparency');
             $player1bullet2.classList.remove('transparency');
         }
-
+        
         else if(this.player1.bullet ===3) {
             $player1bullet1.classList.remove('transparency');
             $player1bullet2.classList.remove('transparency');
             $player1bullet3.classList.remove('transparency');
         }
-
+        
         //EVALUATE LE NOMBRE DE BALLES ET VIES RESTANT CHACUN
-            //PLAYER2
-                //VIE
+        //PLAYER2
+        //VIE
+        
+        $player2vie1.classList.add('transparency');
+        $player2vie2.classList.add('transparency');
+        $player2vie3.classList.add('transparency');
+        
         if(this.player2.health ===3)  {
             $player2vie1.classList.remove('transparency');
             $player2vie2.classList.remove('transparency');
@@ -258,14 +273,19 @@ class Game {
         else if(this.player2.health ===2)  {
             $player2vie1.classList.remove('transparency');
             $player2vie2.classList.remove('transparency');
-        }
+            }
         else if(this.player2.health ===1)  {
             $player2vie1.classList.remove('transparency');
         }
         else if (this.player2.health ===0) {
-
+            
         }
-                //BULLET
+        //BULLET
+
+        $player2bullet1.classList.add('transparency');
+        $player2bullet2.classList.add('transparency');
+        $player2bullet3.classList.add('transparency');
+
         if(this.player2.bullet ===1) {
             $player2bullet1.classList.remove('transparency');
         }
@@ -274,13 +294,13 @@ class Game {
             $player2bullet1.classList.remove('transparency');
             $player2bullet2.classList.remove('transparency');
         }
-
+        
         else if(this.player2.bullet ===3) {
             $player2bullet1.classList.remove('transparency');
             $player2bullet2.classList.remove('transparency');
             $player2bullet3.classList.remove('transparency');
         }
-
+        
         this.showScore();
         this.player1Action = '';
         this.player2Action = '';

@@ -75,19 +75,19 @@ padding: 0 100px;
 }
 
 .bullet1 {
-    height:1.5em;
+    height:23px;
 }
 
 .bullet2 {
-    height:1.5em;
+    height:22px;
 }
 
 .bullet3 {
-    height:1.5em;
+    height:23px;
 }
 
 .unit2{
-    padding-left:250px;
+    padding-left:200px;
 }
 
 .transparency {
@@ -99,17 +99,17 @@ padding: 0 100px;
 
 .load {
     background-color: orange;
-    font-size: 130%;
+    font-size: 120%;
 }
 
 .shot {
     background-color:red;
-    font-size: 130%;
+    font-size: 120%;
 }
 
 .shield {
     background-color:grey;
-    font-size: 130%;
+    font-size: 120%;
 }
 
 /* IMAGES D'ANIMATIONS */

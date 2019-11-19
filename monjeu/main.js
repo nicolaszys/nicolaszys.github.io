@@ -16,9 +16,7 @@ function startGame () {
     myGame = new Game (player1,player2);
     console.log('debut du tour!');
 
-    setInterval (function() {
-        console.log("Go")
-        myGame.evaluate(); }, 3000);
+    setInterval (function() {myGame.evaluate(); }, 3000);
 
 
     document.onkeydown = function(event) {
